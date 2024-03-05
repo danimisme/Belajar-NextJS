@@ -2,9 +2,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const LoginPage = () => {
-  const router = useRouter();
+  const { push } = useRouter();
   const handleLogin = () => {
-    router.push("/product");
+    push("/product");
   };
   return (
     <div>
