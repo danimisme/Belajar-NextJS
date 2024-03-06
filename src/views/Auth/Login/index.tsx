@@ -9,13 +9,13 @@ const LoginViews = () => {
   };
   return (
     <div className={styles.login}>
-      <h1>Login Page</h1>
+      <h1 className="big">Login Page</h1>
       <button onClick={handleLogin}>Login</button>
-      <p>
-        {" "}
-        Belum punya akun? <Link href="/auth/register">Register</Link>{" "}
+      <p style={{ color: "red", border: "1px solid red", borderRadius: "5px" }}>
+        Belum punya akun? <Link href="/auth/register">Register</Link>
       </p>
     </div>
   );
 };
+
 export default LoginViews;
