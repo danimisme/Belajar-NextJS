@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Login.module.scss";
+import styles from "./login.module.scss";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { signIn } from "next-auth/react";
@@ -76,6 +76,17 @@ const LoginView = () => {
             {isLoading ? "Loading..." : "Login"}
           </button>
         </form>
+        <button
+          onClick={() =>
+            signIn("google", {
+              callbackUrl,
+              redirect: false,
+            })
+          }
+          className={styles.login__form__item__google}
+        >
+          Sign in with Google
+        </button>
       </div>
       <p className={styles.login__link}>
         Don&apos;t have an account? Sign up{" "}

@@ -5,8 +5,11 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className="big">Navbar</div>
-      <div>
-        {data && data.user.fullName}
+      <div className={styles.profile}>
+        {data?.user?.image && (
+          <img className={styles.avatar} src={data.user.image} alt="" />
+        )}
+        {data && data.user.fullName} {"  "}
         {data ? (
           <button className={styles.button} onClick={() => signOut()}>
             Sign Out

@@ -18,3 +18,15 @@
     border: 1px solid #fff;
     cursor: pointer;
   }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+
+  .profile {
+    display: flex;
+    gap:10px;
+    align-items: center;
+  }
