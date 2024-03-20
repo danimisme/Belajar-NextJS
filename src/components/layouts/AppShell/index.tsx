@@ -13,7 +13,6 @@ const disableNavbar = ["/auth/login", "/auth/register", "/404"];
 const AppShell = (props: AppShellProps) => {
   const { children } = props;
   const { pathname } = useRouter();
-  console.log(pathname);
   return (
     <main className={roboto.className}>
       {!disableNavbar.includes(pathname) && <Navbar />}
