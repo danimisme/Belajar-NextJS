@@ -12,7 +12,7 @@ const ProductPage = () => {
 
   return (
     <div>
-      <ProductView products={isLoading ? [] : data.data} />
+      <ProductView products={isLoading ? [] : data?.data} />
     </div>
   );
 };
